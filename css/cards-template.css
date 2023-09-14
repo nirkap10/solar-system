@@ -1,0 +1,79 @@
+.div-grid{
+    border-radius: 15px;
+    background-color: black;
+    width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.cards{
+    display: flex;
+    width: 360px;
+    height: 438px;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 21px;
+    flex-shrink: 0;
+    background-color: black;
+    border: solid 3px white;
+    border-radius: 15px;
+}
+.rotating-planet{
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+    animation:spin 6s linear alternate infinite
+}
+
+@keyframes spin{
+    100%{background-position: 100%;}
+}
+.planet-name{
+    align-self: stretch;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.direct-btn{
+    display: flex;
+    width: 167px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background: #FFF;
+    box-shadow: 3px 2px 31px 1px rgba(0, 0, 0, 0.51);
+    cursor: pointer;
+    transition: all 1s ease-in-out;;
+}
+.direct-btn:hover{
+    opacity: 0.4;
+}
+#mars{
+    background-image: url(/img/mars.png);
+}
+#earth{
+    background-image: url(/img/earth.jpg);
+}
+#jupiter{
+    background-image: url(/img/jupiter.jpg);
+}#mercury{
+    background-image: url(/img/mercury.jpg);
+}#pluto{
+    background-image: url(/img/pluto.webp);
+}#saturn{
+    background-image: url(/img/saturn.jpg);
+}#venus{
+    background-image: url(/img/venus.jpg);
+}#uranus{
+    background-image: url(/img/uranus.jpg);
+}
